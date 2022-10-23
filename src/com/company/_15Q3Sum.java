@@ -6,7 +6,7 @@ import java.util.List;
 public class _15Q3Sum {
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-
+        
         return res;
     }
     public static void main(String[] args) {
