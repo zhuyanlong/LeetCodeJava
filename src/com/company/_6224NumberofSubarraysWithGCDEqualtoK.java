@@ -4,7 +4,7 @@ public class _6224NumberofSubarraysWithGCDEqualtoK {
     public static int subarrayGCD(int[] nums, int k) {
         int res = 0;
         int n = nums.length;
-        for(int i = 0; i <nums.length; i++) {
+        for(int i = 0; i < n; i++) {
             int currGCD = 0;
             for (int j = i; j < n; j++) {
                 currGCD = GCD(currGCD, nums[j]);
@@ -23,7 +23,7 @@ public class _6224NumberofSubarraysWithGCDEqualtoK {
         return divisor;
     }
     public static void main(String[] args) {
-        int[] nums = new int[]{9, 3, 1, 2, 6, 3};
+        int[] nums = new int[]{27, 9, 6, 81};
         int k = 3;
         int res = subarrayGCD(nums, k);
         System.out.println(res);
