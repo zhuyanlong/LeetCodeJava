@@ -22,14 +22,14 @@ public class _2471MinimumNumberofOperationstoSortaBinaryTreebyLevel {
             }
         }
         int count = 0;
-//        交换排序,实在想不出好的解法
-//        可以直接使用交换结论,在网上查
         for (List<Integer> array : lst) {
             count += f(array);
         }
         return count;
     }
 
+    //  交换排序,实在想不出好的解法
+    //  可以直接使用交换结论,在网上查
     public static int f(List<Integer> array) {
         Map<Integer, Integer> map = new HashMap<>();
         int n = array.size();
